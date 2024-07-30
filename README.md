@@ -19,7 +19,7 @@ cd hanzi-trainer
 Simply open the index.html file in your preferred web browser to start using the app.
 
 3. Alternatively, you can directly run the application by visiting:
-[https://yourname.github.io/hanziTrainer/](https://yourname.github.io/hanziTrainer/)
+[https://AlvinPanengkoan.github.io/hanziTrainer/](https://AlvinPanengkoan.github.io/hanziTrainer/)
 
 ## Usage
 1. Upload a TXT File:
