@@ -43,7 +43,7 @@ Type the Hanzi that corresponds to the displayed meaning and submit your answer.
 After completing the training, review your results, including the total attempts, mistakes, and time taken.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE(LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 This project is created by [Alvin Panengkoan](https://github.com/AlvinPanengkoan). If you use this project, please give credit to the author.
