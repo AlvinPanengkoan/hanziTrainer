@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanzi Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hanzi Trainer</h1>
+        <input type="file" id="fileInput" accept=".txt">
+        <label for="difficultySelect">Select Difficulty:</label>
+        <select id="difficultySelect">
+            <option value="none">None</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+        <button id="startButton" onclick="startTraining()">Start Training</button>
+        <div id="trainingSection" class="hidden">
+            <p id="meaning" class="highlight"></p>
+            <p id="feedback"></p>
+            <input type="text" id="userInput" placeholder="Type the Hanzi here">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="timer"></p>
+        </div>
+        <div id="resultsSection" class="hidden">
+            <h2>Results</h2>
+            <p id="score"></p>
+            <div id="wrongAnswersContainer">
+                <h3>Wrong Answers:</h3>
+                <ul id="wrongAnswersList"></ul>
+            </div>
+            <button id="restartButton" onclick="restartTraining()">Restart</button>
+            <button onclick="exitTraining()">Exit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

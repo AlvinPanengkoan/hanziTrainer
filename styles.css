@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="file"],
+select,
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#timer {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#wrongAnswersList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#wrongAnswersList li {
+    background: #ffdddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.highlight {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.correct {
+    animation: correctAnimation 2s ease;
+    background-color: #d4edda;
+    color: green;
+    display: inline-block;
+    padding: 5px;
+    width: fit-content;
+}
+
+@keyframes correctAnimation {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #d4edda;
+    }
+}
+
+.incorrect {
+    animation: incorrectAnimation 2s ease;
+    background-color: #f8d7da;
+    color: red;
+    display: inline-block;
+    padding: 5px;
+    width: fit-content;
+}
+
+@keyframes incorrectAnimation {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #f8d7da;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+    }
+}
